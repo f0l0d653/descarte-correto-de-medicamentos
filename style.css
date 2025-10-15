@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #e9f3ee;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(to right, #88c9a1, #4ea686);
+    padding: 15px 0;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 40px auto;
+}
+
+article h2 {
+    font-size: 26px;
+    color: #1e5d43;
+    margin-bottom: 15px;
+}
+
+article p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+article a {
+    color: #2b8a5b;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.qr-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.qr-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.youtube-icon {
+    width: 80px;
+    height: auto;
+}
+
+.qr-section img {
+    width: 180px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.qr-section img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #cce3d6;
+    padding: 15px 0;
+    text-align: center;
+    color: #2d6850;
+    font-size: 14px;
+}
+
+footer .links {
+    margin-top: 5px;
+}
+
+footer a {
+    color: #2d6850;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #e9f3ee;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(to right, #88c9a1, #4ea686);
+    padding: 15px 0;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 40px auto;
+}
+
+article h2 {
+    font-size: 26px;
+    color: #1e5d43;
+    margin-bottom: 15px;
+}
+
+article p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+article a {
+    color: #2b8a5b;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.qr-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.qr-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.youtube-icon {
+    width: 80px;
+    height: auto;
+}
+
+.qr-section img {
+    width: 180px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.qr-section img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #cce3d6;
+    padding: 15px 0;
+    text-align: center;
+    color: #2d6850;
+    font-size: 14px;
+}
+
+footer .links {
+    margin-top: 5px;
+}
+
+footer a {
+    color: #2d6850;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
