@@ -1,3 +1,4 @@
+/* Reset e estilo global */
 * {
     margin: 0;
     padding: 0;
@@ -5,21 +6,33 @@
     font-family: 'Arial', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #e9f3ee;
     color: #333;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
+/* Estrutura principal */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Cabeçalho */
 header {
     background: linear-gradient(to right, #88c9a1, #4ea686);
     padding: 15px 0;
     color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header .container {
@@ -43,6 +56,7 @@ header .container {
     font-weight: 600;
 }
 
+/* Conteúdo */
 main {
     display: flex;
     flex-direction: column;
@@ -71,168 +85,57 @@ article a:hover {
     text-decoration: underline;
 }
 
-.qr-section {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.qr-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-}
-
-.youtube-icon {
-    width: 80px;
-    height: auto;
-}
-
-.qr-section img {
-    width: 180px;
-    height: auto;
+/* Imagens e vídeos */
+figure img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-.qr-section img:hover {
-    transform: scale(1.05);
+figure img:hover {
+    transform: scale(1.02);
 }
 
-footer {
-    background-color: #cce3d6;
-    padding: 15px 0;
+.video-section {
     text-align: center;
-    color: #2d6850;
-    font-size: 14px;
 }
 
-footer .links {
-    margin-top: 5px;
-}
-
-footer a {
-    color: #2d6850;
-    margin: 0 8px;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #e9f3ee;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header {
-    background: linear-gradient(to right, #88c9a1, #4ea686);
-    padding: 15px 0;
-    color: #fff;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    width: 50px;
-}
-
-.logo h1 {
-    font-size: 22px;
-    font-weight: 600;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin: 40px auto;
-}
-
-article h2 {
-    font-size: 26px;
+.video-section h3 {
     color: #1e5d43;
     margin-bottom: 15px;
 }
 
-article p {
-    margin-bottom: 15px;
-    line-height: 1.6;
+/* Botão */
+button {
+    background-color: #2b8a5b;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
     font-size: 16px;
-}
-
-article a {
-    color: #2b8a5b;
-    text-decoration: none;
-}
-
-article a:hover {
-    text-decoration: underline;
-}
-
-.qr-section {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.qr-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
 }
 
-.youtube-icon {
-    width: 80px;
-    height: auto;
-}
-
-.qr-section img {
-    width: 180px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.qr-section img:hover {
+button:hover {
+    background-color: #1e5d43;
     transform: scale(1.05);
 }
 
+/* Rodapé */
 footer {
     background-color: #cce3d6;
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
     color: #2d6850;
     font-size: 14px;
+    border-top: 2px solid #a8cbb6;
 }
 
 footer .links {
@@ -247,4 +150,26 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    main {
+        gap: 25px;
+        margin: 25px auto;
+    }
+
+    article h2 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 80%;
+    }
 }
